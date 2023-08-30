@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
+import logoSrc from './assets/logo/Big Skillup logo-512.png'
 import './App.css'
 
 function App() {
@@ -8,7 +7,8 @@ function App() {
 
   return (
     <>
-      <h1>Amol Shinde</h1>
+      <img src={logoSrc}/>
+      <h1>Coming Soon</h1>
     </>
   )
 }
