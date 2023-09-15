@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import Home from './components/Home/Home.jsx'
 import './index.css'
 import {
   Route,
@@ -11,12 +12,8 @@ import {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App />}>
-      <Route path="" element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="contact" element={<Contact />} />
-      <Route path="user/:userId" element={<User />} />
-      <Route path="github" element={<Github />} />
+    <Route path="/" element={<App />}>  
+    < Route path="" element={<Home/>} />    
     </Route>
   )
 );
