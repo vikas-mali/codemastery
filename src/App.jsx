@@ -1,15 +1,16 @@
 import { useState } from 'react';
-import logoSrc from './assets/logo/Big Skillup logo-512.png'
 import './App.css'
-import Header from './components/common/header'
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import { Outlet } from "react-router-dom";
 
 function App() {
 
   return (
     <>
-    {/* <Header/> */}
-      <img src={logoSrc}/>
-      <h1 className="text-3xl font-bold underline">Coming Soon</h1>      
+    <Header />
+      <Outlet />
+      <Footer />
     </>
   )
 }
