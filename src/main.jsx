@@ -9,11 +9,13 @@ import {
   createBrowserRouter,
   createRoutesFromElements
 } from "react-router-dom";
+import ChangeBGColorMouseMove from './components/JS_Projects/Change_BGColor_Mousemove.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>  
     < Route path="" element={<Home/>} />    
+    < Route path="" element={<ChangeBGColorMouseMove/>} />  
     </Route>
   )
 );
